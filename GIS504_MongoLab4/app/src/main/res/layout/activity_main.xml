@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/latitude_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="@string/latitude_label"
+    android:layout_alignParentTop="true"
+    android:textSize="20sp" />
+
+
+<TextView
+    android:id="@+id/latitude_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="19dp"
+    android:textIsSelectable="true"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/longitude_label"
+    android:textSize="20sp" />
+
+
+<TextView
+    android:id="@+id/longitude_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/longitude_label"
+    android:textSize="20sp"
+    android:textIsSelectable="true"
+    android:layout_below="@+id/latitude_label"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="24dp" />
+
+
+<TextView
+    android:id="@+id/longitude_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textIsSelectable="true"
+    android:textSize="20sp"
+    android:layout_alignTop="@+id/longitude_label"
+    android:layout_alignLeft="@+id/latitude_text"
+    android:layout_alignStart="@+id/latitude_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/displayamessage"
+        android:id="@+id/tweetbutton"
+        android:textColor="#ffffec0f"
+        android:background="#ff6d04ff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="buttonOnClick"
+        android:layout_below="@+id/postbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postMongi"
+        android:onClick="onPostClick"
+        android:id="@+id/postbutton"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/Lastlocbutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where have I been?"
+        android:id="@+id/Lastlocbutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onQueryClick" />
+
+
+</RelativeLayout>
